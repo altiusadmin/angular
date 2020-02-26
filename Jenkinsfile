@@ -5,6 +5,9 @@ pipeline {
             args '-v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker'
         }
     }
+    environment {
+        HOME = '.'
+    }
 
     options {
       buildDiscarder(logRotator(numToKeepStr: '5'))
