@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:12.13.0'
-            args '-v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker'
+            args '-u root:sudo -v /var/run/docker.sock:/var/run/docker.sock -v /usr/bin/docker:/usr/bin/docker'
         }
     }
     environment {
