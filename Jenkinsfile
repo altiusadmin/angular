@@ -23,7 +23,6 @@ pipeline {
         stage('NPM Install'){
             steps {
                 sh 'npm install'
-                sh 'chmod -R 777 /usr/local/lib/node_modules'
                 sh 'npm install -g @angular/cli'
             }
         }
