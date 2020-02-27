@@ -33,5 +33,11 @@ pipeline {
             }
         }
 
+        stage('NG Build'){
+            steps {
+                sh 'echo Hello'
+            }
+        }
+
     }    
 }
