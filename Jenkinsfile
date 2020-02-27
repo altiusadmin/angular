@@ -33,11 +33,5 @@ pipeline {
             }
         }
 
-        stage('Hello'){
-            steps {
-                sh 'echo Hello'
-            }
-        }
-
     }    
 }
