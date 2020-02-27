@@ -33,7 +33,7 @@ pipeline {
             }
         }
 
-        stage('NG Build'){
+        stage('Hello'){
             steps {
                 sh 'echo Hello'
             }
